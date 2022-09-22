@@ -1,0 +1,47 @@
+body{
+    background-color: aquamarine;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+/* box */
+.box{
+    background-color: orange;
+    height: 50px;
+    width: 60px;
+    padding: 15px;
+    margin: 5px;
+    transition: 3s;
+}
+
+.box:hover{
+    width: 300px;
+}
+
+/* box1 */
+
+.box1{
+    background-color: tomato;
+    height: 50px;
+    width: 60px;
+    padding: 15px;
+    margin: 5px;
+    transition: 3s;
+}
+
+.box1:hover{
+    height: 300px;
+    width:300px;
+}
+
+a{
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 30px;
+}

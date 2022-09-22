@@ -1,0 +1,162 @@
+body{
+    background-color: dodgerblue;
+}
+
+/* Container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+     
+}
+
+/* Box */
+h1{
+    margin: 0;
+}
+b{
+    vertical-align: bottom;
+}
+
+.box{
+    background-color: orange;
+    width: 50px;
+    height: 60px;
+    padding: 25px;
+    margin: 50px 50px 20px 50px;
+    transform: skewX(20deg);
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: test1;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* transform: skewX(-20deg);
+    transform: skewX(20deg);*/
+} 
+
+@keyframes test1{
+    from{
+        transform: skewX(20deg);
+    }
+    to{
+        transform: skewX(-20deg);
+    }
+}
+
+.box1{
+    background-color: white;
+    width: 50px;
+    height: 60px;
+    padding: 25px;
+    margin: 50px 50px 20px 50px;   
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-name: test2;
+    animation-direction:alternate;
+    animation-timing-function:ease-out;
+}
+
+@keyframes test2{
+    from{
+        transform: skewY(20deg);
+    }
+    to{
+        transform: skewY(-20deg);
+    }
+}
+
+.box2{
+    background-color: green;
+    width: 50px;
+    height: 60px;
+    padding: 25px;
+    margin: 50px 50px 20px 50px;     
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-name: test3;
+    animation-direction:normal;
+    animation-timing-function: In Out · Sine;
+}
+
+@keyframes test3{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.box3{
+    width: 50px;
+    height: 60px;
+    padding: 25px;
+    border: 3px solid rgb(57, 49, 122);
+    margin: 40px 50px 20px 50px;
+}
+
+.a{
+    background-color: orange;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-name: test4;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes test4{
+    from{
+        transform:scaleY(1);
+    }
+    to{
+        transform:scaleY(.5);
+    }
+}
+
+.b{
+    background-color: white;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-name: test5;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes test5{
+    from{
+        transform:scaleX(1);
+    }
+    to{
+        transform:scaleX(.5);
+    }
+}
+
+.c{
+    background-color: green;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-name: test6;
+    animation-direction:normal;
+    animation-timing-function: linear;
+    margin-bottom: 30px;
+}
+
+@keyframes test6{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.title{
+    font-size: 1.5rem;
+    position: relative;
+    left: 100px;
+}
